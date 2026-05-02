@@ -11,11 +11,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&') no-repeat center center/cover;
+            /* Tui đã thay link ảnh nền bền hơn cho ông */
+            background: url('https://i.imgur.com/3YhI3oV.jpg') no-repeat center center/cover;
             font-family: sans-serif;
         }
         .card {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
             border-radius: 20px;
@@ -24,6 +25,7 @@
             color: white;
             width: 300px;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
         }
         .profile-pic {
             width: 100px;
@@ -31,26 +33,28 @@
             border-radius: 50%;
             border: 3px solid #00d4ff;
             margin-bottom: 15px;
+            object-fit: cover;
         }
         .btn {
             display: block;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(0, 212, 255, 0.3);
             color: white;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 12px;
             transition: 0.3s;
+            font-weight: bold;
         }
-        .btn:hover { background: rgba(0, 212, 255, 0.5); }
+        .btn:hover { background: rgba(0, 212, 255, 0.6); transform: scale(1.05); }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&" class="profile-pic">
+        <img src="https://i.imgur.com/3YhI3oV.jpg" class="profile-pic">
         <h1>Đạt</h1>
         <p>Owner The Shadow Market</p>
-        <a href="#" class="btn">🏠 Server Discord</a>
+        <a href="https://discord.gg/boladatgg" class="btn">🏠 Server Discord</a>
         <a href="#" class="btn">🛒 Shop Blox Fruit</a>
     </div>
 </body>

@@ -12,72 +12,46 @@
             justify-content: center;
             align-items: center;
             background: url('https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&') no-repeat center center/cover;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: sans-serif;
         }
-
         .card {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 25px;
-            padding: 40px;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 30px;
             text-align: center;
             color: white;
-            width: 350px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            width: 300px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
         .profile-pic {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            border: 4px solid #00d4ff;
+            border: 3px solid #00d4ff;
             margin-bottom: 15px;
-            box-shadow: 0 0 20px #00d4ff;
         }
-
-        h1 { margin: 10px 0; font-size: 28px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        p { margin-bottom: 25px; opacity: 0.9; }
-
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
         .btn {
-            background: rgba(255, 255, 255, 0.15);
+            display: block;
+            background: rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 12px;
+            padding: 10px;
+            margin: 10px 0;
             text-decoration: none;
-            border-radius: 12px;
-            font-weight: bold;
+            border-radius: 10px;
             transition: 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-
-        .btn:hover {
-            background: rgba(0, 212, 255, 0.4);
-            transform: translateY(-3px);
-            border-color: #00d4ff;
-        }
+        .btn:hover { background: rgba(0, 212, 255, 0.5); }
     </style>
 </head>
 <body>
     <div class="card">
-        <!-- Ảnh đại diện Muichiro cho đồng bộ -->
         <img src="https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&" class="profile-pic">
-        
         <h1>Đạt</h1>
         <p>Owner The Shadow Market</p>
-        
-        <div class="links-container">
-            <!-- Thay link Facebook/Discord của ông vào chỗ dấu # này nhé -->
-            <a href="https://discord.gg/Rs97EdAw7X" target="_blank" class="btn">🏠 Server Discord</a>
-            <a href="#" class="btn">🛒 Shop Blox Fruit</a>
-            <a href="#" class="btn">💬 Liên hệ Zalo</a>
-        </div>
+        <a href="#" class="btn">🏠 Server Discord</a>
+        <a href="#" class="btn">🛒 Shop Blox Fruit</a>
     </div>
 </body>
 </html>

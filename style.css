@@ -5,7 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0d1117; /* Màu nền tối cho chuyên nghiệp */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7CP7Jd8K4k23n4xZKIBsfb_GuIQmJ84kjww&s');
+    background-size: cover;
+    background-position: center;
     font-family: sans-serif;
 }
 

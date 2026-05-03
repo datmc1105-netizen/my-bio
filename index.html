@@ -29,24 +29,30 @@
         🎵
     </button>
 </div>
-
-<script>
+    <script>
     var music = document.getElementById("bg-music");
-var btn = document.getElementById("music-btn");
+    var btn = document.getElementById("music-btn");
 
-function toggleMusic() {
-    if (music.paused) {
-        music.play().then(() => {
-            btn.innerHTML = "⏸️"; // Đổi icon sang Pause
-            btn.style.background = "rgba(255, 0, 0, 0.6)"; // Đổi màu sang đỏ
-        }).catch(error => {
-            console.log("Lỗi phát nhạc:", error);
-            alert("Đạt ơi, hãy nhấn vào màn hình một cái rồi bấm lại nút nhạc nhé!");
-        });
-    } else {
-        music.pause();
-        btn.innerHTML = "🎵"; // Đổi lại icon nốt nhạc
-        btn.style.background = "rgba(0, 200, 255, 0.6)"; // Đổi lại màu xanh
+    function toggleMusic() {
+        if (music.paused) {
+            // Lệnh phát nhạc mạnh mẽ hơn
+            var playPromise = music.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    btn.innerHTML = "⏸️";
+                    btn.style.background = "rgba(255, 0, 0, 0.6)";
+                }).catch(error => {
+                    // Nếu bị lỗi, nó sẽ hiện thông báo để Đạt biết
+                    alert("Trình duyệt đang chặn nhạc. Đạt hãy chạm vào màn hình 1 cái rồi bấm lại nút nhé!");
+                });
+            }
+        } else {
+            music.pause();
+            btn.innerHTML = "🎵";
+            btn.style.background = "rgba(0, 200, 255, 0.6)";
+        }
     }
-}
+</script>
+</body>
 </html>

@@ -130,3 +130,39 @@ h1 {
     to { background-position: 200px 500px; }
 }
 }
+.card {
+    /* ... code cũ của bạn ... */
+    position: relative; /* Thêm dòng này để làm viền */
+    border: none; /* Bỏ viền cũ */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    background: linear-gradient(90deg, #00c8ff, #0078ff, #00c8ff);
+    background-size: 400%;
+    border-radius: 20px; /* Bằng border-radius của card */
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(5px);
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 400% 50%; }
+}
+.btn:hover i {
+    animation: rotateIcon 0.5s ease-in-out;
+}
+
+@keyframes rotateIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(10deg); }
+}
+h2 {
+    color: #e0f7fa !important; /* Màu xanh nhạt */
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+    font-size: 1.1rem !important;
+}

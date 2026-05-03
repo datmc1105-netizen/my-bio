@@ -44,20 +44,60 @@ body {
 }
 
 /* Định dạng tên và nút bấm */
-h1 { font-size: 28px; margin-bottom: 10px; }
-p { color: #8b949e; margin-bottom: 25px; }
-
-.button-group { display: flex; flex-direction: column; gap: 10px; }
-.btn {
-    background: #00c8ff;
-    color: black;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
+/* Định dạng tên và nút bấm - BẢN NÂNG CẤP */
+h1 { 
+    font-size: 28px; 
+    margin-bottom: 10px; 
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5); /* Thêm chút ánh sáng cho tên */
 }
-.btn:hover { opacity: 0.8; transform: scale(1.05); }
+
+p { 
+    color: rgba(255, 255, 255, 0.7); 
+    margin-bottom: 25px; 
+    letter-spacing: 1px;
+}
+
+.button-group { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.btn {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05); /* Nền trong suốt kiểu kính */
+    backdrop-filter: blur(8px);           /* Làm mờ hậu cảnh */
+    -webkit-backdrop-filter: blur(8px);
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 12px;                  /* Bo góc hiện đại hơn */
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+/* Hiệu ứng tia sáng chạy ngang khi hover */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    background: rgba(0, 200, 255, 0.2);   /* Đổi màu xanh nhẹ khi chạm vào */
+    border-color: #00c8ff;
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.4); /* Phát sáng cực đẹp */
+}
 /* Làm cho ảnh đại diện Muichiro có viền phát sáng */
 .avatar-container img {
     border: 3px solid #00c8ff;

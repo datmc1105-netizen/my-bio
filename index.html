@@ -32,19 +32,21 @@
 
 <script>
     var music = document.getElementById("bg-music");
-    var btn = document.getElementById("music-btn");
+var btn = document.getElementById("music-btn");
 
-    function toggleMusic() {
-        if (music.paused) {
-            music.play();
-            btn.innerHTML = "⏸️";
-            btn.style.background = "rgba(255, 0, 0, 0.6)"; // Đổi sang màu đỏ khi đang phát
-        } else {
-            music.pause();
-            btn.innerHTML = "🎵";
-            btn.style.background = "rgba(0, 200, 255, 0.6)"; // Trở lại màu xanh
-        }
+function toggleMusic() {
+    if (music.paused) {
+        music.play().then(() => {
+            btn.innerHTML = "⏸️"; // Đổi icon sang Pause
+            btn.style.background = "rgba(255, 0, 0, 0.6)"; // Đổi màu sang đỏ
+        }).catch(error => {
+            console.log("Lỗi phát nhạc:", error);
+            alert("Đạt ơi, hãy nhấn vào màn hình một cái rồi bấm lại nút nhạc nhé!");
+        });
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵"; // Đổi lại icon nốt nhạc
+        btn.style.background = "rgba(0, 200, 255, 0.6)"; // Đổi lại màu xanh
     }
-</script>
-</body>
+}
 </html>

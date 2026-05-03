@@ -4,63 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đạt | The Shadow Market</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* Link ảnh Muichiro mới cực nét */
-            background: url('https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&') no-repeat center center/cover;
-            font-family: sans-serif;
-        }
-        .card {
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 20px;
-            padding: 35px;
-            text-align: center;
-            color: white;
-            width: 320px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-        }
-        .profile-pic {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 3px solid #00d4ff;
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-        .btn {
-            display: block;
-            background: linear-gradient(45deg, #00d4ff, #004e92);
-            color: white;
-            padding: 12px;
-            margin: 12px 0;
-            text-decoration: none;
-            border-radius: 12px;
-            transition: 0.3s;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
-        }
-        .btn:hover { 
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
-        <img src="https://i.pinimg.com/736x/2b/23/9c/2b239c09c9164c01c0c57c6b907f1853.jpg" class="profile-pic">
+        <div class="avatar-container">
+            <img src="https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png" alt="Muichiro">
+        </div>
         <h1>Đạt</h1>
         <p>Owner The Shadow Market</p>
-        <a href="https://discord.gg/Rs97EdAw7X" class="btn">🏠 Server Discord</a>
-        <a href="#" class="btn">🛒 Shop Blox Fruit</a>
-    <img src="https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&" class="profile-pic">
+        <div class="button-group">
+            <a href="#" class="btn">🏠 Server Discord</a>
+            <a href="#" class="btn">🛒 Shop Blox Fruit</a>
+        </div>
+    </div>
 </body>
 </html>
-

@@ -69,7 +69,9 @@ p {
     gap: 15px; 
 }
 
-.btn {
+.btn i {
+    margin-right: 10px; /* Tạo khoảng cách để icon không dính sát vào chữ */
+}
     position: relative;
     background: rgba(255, 255, 255, 0.05); /* Nền trong suốt kiểu kính */
     backdrop-filter: blur(8px);           /* Làm mờ hậu cảnh */

@@ -4,11 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/originals/67/bc/b8/67bcb8db2a3a41e2ffbcc48066da9ced.gif');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.redd.it/88ah0qdy4q4e1.gif');
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
-    cursor: url('https://cur.cursors-4u.net/anime/ani-12/ani1158.cur'), auto;
+    cursor: url('https://i.pinimg.com/originals/72/4b/d3/724bd3bd38d3b194b9667fc608cc3de7.gif'), auto;
 }
 /* Khung card chính */
 .card {

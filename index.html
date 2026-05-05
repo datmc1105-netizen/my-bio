@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiến Đạt</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .icon-btn {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .icon-btn:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+</style>
 </head>
 <body>
     <div class="card">
@@ -14,10 +41,12 @@
         <h1>Đạt</h1>
         <p> Đang làm lại từ đầu ae có gì ủng hộ tui bên facebook nhé ! </p>
         <div class="button-group">
-            <a href="https://www.facebook.com/profile.php?id=61567735786967" class="button">
-  <i class="fab fa-facebook"></i> Facebook
-</a>
-        </div>
+         <!-- Dán đoạn này vào chỗ ông muốn hiển thị nút -->
+<div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=61567735786967" class="icon-btn">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+    <!-- Ông có thể thêm các nút khác tương tự ở đây -->
     <!-- Đoạn code trình phát nhạc -->
 <audio id="bg-music" loop autoplay muted>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">

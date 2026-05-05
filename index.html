@@ -2,51 +2,89 @@
 <html lang="vi">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
+<style>
+    body {
+        background: url('https://image_2d883b.jpg') no-repeat center center fixed; /* Lấy ảnh Muichiro của ông làm nền */
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05); /* Độ mờ cực mỏng */
+        backdrop-filter: blur(15px); /* Hiệu ứng kính mờ xịn */
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 25px;
+        padding: 40px;
+        text-align: center;
+        width: 380px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .avatar-container img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 3px solid #00c3ff; /* Màu xanh Muichiro */
+        box-shadow: 0 0 15px #00c3ff;
+        margin-bottom: 20px;
+    }
+
+    h1 { color: #fff; margin: 10px 0; font-size: 28px; }
+    p { color: rgba(255, 255, 255, 0.8); font-size: 15px; line-height: 1.5; }
+
     .social-icons {
         display: flex;
         justify-content: center;
-        gap: 15px;
-        margin-top: 20px;
+        gap: 20px;
+        margin-top: 25px;
     }
 
     .icon-btn {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
         display: flex;
         align-items: center;
         justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        color: #fff;
+        font-size: 24px;
         text-decoration: none;
-        color: white;
-        background: rgba(255, 255, 255, 0.1); 
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 12px;
-        transition: all 0.3s ease;
+        transition: 0.4s;
     }
 
     .icon-btn:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: translateY(-5px);
-        border-color: rgba(255, 255, 255, 0.4);
+        background: #00c3ff;
+        transform: translateY(-8px);
+        box-shadow: 0 0 20px #00c3ff;
+        border-color: #00c3ff;
     }
 </style>
-</head>
-<body>
+</head><body>
     <div class="card">
         <div class="avatar-container">
-        <img src="https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.png?ex=69f744c1&is=69f5f341&hm=0abce22a6f26b09a9c5c33007a142082394e2717d541a0194bdb023d1f9e7da9&/%3E">
+            <!-- Ảnh Muichiro của ông -->
+            <img src="https://cdn.discordapp.com/attachments/1484879717315252324/1500117461498990665/anh-tokito-muichiro-09.jpg">
         </div>
+        
         <h1>Đạt</h1>
-        <p> Đang làm lại từ đầu ae có gì ủng hộ tui bên facebook nhé ! </p>
-        <div class="button-group">
-         <!-- Dán đoạn này vào chỗ ông muốn hiển thị nút -->
-<div class="social-icons">
-    <a href="https://www.facebook.com/profile.php?id=61567735786967" class="icon-btn">
-        <i class="fa-brands fa-facebook"></i>
-    </a>
-    <!-- Ông có thể thêm các nút khác tương tự ở đây -->
+        <p>Đang làm lại từ đầu ae có gì ủng hộ tui bên facebook nhé !</p>
+        
+        <!-- Gộp hết nút bấm vào đây, xóa cái button-group thừa đi -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61567735786967" class="icon-btn">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <!-- Ông có thể thêm nút Discord hay TikTok ở đây nếu muốn -->
+        </div>
+    </div> <!-- Đây là thẻ đóng quan trọng để bọc mọi thứ vào trong khung card -->
     <!-- Đoạn code trình phát nhạc -->
 <audio id="bg-music" loop autoplay muted>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
